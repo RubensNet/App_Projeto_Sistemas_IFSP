@@ -1,0 +1,6 @@
+CREATE TABLE hospedagem(
+	codigo_hospedagem BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	descricao VARCHAR(50) NOT NULL,
+	valor DECIMAL(8,2),
+	ativo BOOLEAN NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
