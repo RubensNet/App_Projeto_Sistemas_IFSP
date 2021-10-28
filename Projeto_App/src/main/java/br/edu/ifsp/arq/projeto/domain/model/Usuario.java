@@ -25,7 +25,7 @@ public class Usuario {
 	@JoinTable(name = "usuario_permissao", 
 		joinColumns = @JoinColumn(name = "codigo_usuario"),
 		inverseJoinColumns = @JoinColumn(name = "codigo_permissao"))
-	private List<Hospedagem> permissoes;
+	private List<Permissao> permissoes;
 
 	public Long getCodigo() {
 		return codigo;
@@ -59,11 +59,11 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public List<Hospedagem> getPermissoes() {
+	public List<Permissao> getPermissoes() {
 		return permissoes;
 	}
 
-	public void setPermissoes(List<Hospedagem> permissoes) {
+	public void setPermissoes(List<Permissao> permissoes) {
 		this.permissoes = permissoes;
 	}
 
